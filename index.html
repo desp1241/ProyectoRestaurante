@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante MiPerú</title>
+    <script src="https://kit.fontawesome.com/6b03af4d12.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="java/menu.js">
+    <link rel="stylesheet" href="java/carrito.js">
+</head>
+
+<body>
+    <header class="encabezado">
+        <a href="inicio"></a>
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Restaurante <span class="rojo">Mi</span>Pe<span class="rojo">rú</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#menu">Menú</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="divisor">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Bienvenido</h2>
+                    <a href="#menu" class="btn bordes">Nuestro menú</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="img/bg_video1.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+    <a name="nosotros"></a>
+    <div class="contenedor-nosotros contenedor">
+        <div class="texto-nosotros">
+            <p class="saludo">Bienvenido a</p>
+            <h1>Restaurante MiPerú</h1>
+            <p>Somos un restaurante de comida peruana (Costa, Sierra y Selva) en constante crecimiento.
+                Cada día, seleccionamos los mejores ingredientes de proveedores locales y extranjeros responsables con el Perú y el medio ambiente.
+                Nuestra meta es dejar 100% satisfechos a nuestros clientes, brindándoles el mejor servicio y atención, para lograr una experiencia Culinaria inolvidable y satisfactoria.
+                Creemos en aprovechar lo que recibimos para convertirlo en algo mejor. Sobre todas las cosas, siempre queremos que la pases bien comiendo y bebiendo delicioso con nosotros. 
+                Descubre todo nuestro menú sorprendiéndote con algo nuevo cada vez.
+            </p>
+            <a href="#" class="btn btn-rojo">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img src="img/nosotros1.webp" alt="comiendo1">
+            </div>
+            <div class="imagen2">
+                <img src="img/nosotros2.webp" alt="comiendo2">
+                <img src="img/nosotros3.webp" alt="comiendo3">
+            </div>
+        </div>
+    </div>
+    <a name="menu"></a>
+    <section class="menu contenedor">
+        <h2 class="texto-platos">Platos populares</h2>
+        <div class="botones-platos">
+            <button class="todos btn btn-rojo2">Todos</button>
+            <button class="costas btn btn-rojo2">Costa</button>
+            <button class="sierras btn btn-rojo2">Sierra</button>
+            <button class="selvas btn btn-rojo2">Selva</button>
+            <button class="postres btn btn-rojo2">Postres</button>
+        </div>
+        <div class="platos">
+            <div class="plato" data-plato="costa">
+                <img src="img/costa1.webp" alt="costa" class="plato-imagen">
+                <h2 class="plato-nombre">Ceviche</h2>
+                <p>Pescado, Camote, Lechuga, Choclo hervido.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 35.00</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="costa">
+                <img src="img/costa2.webp" alt="costa" class="plato-imagen">
+                <h2 class="plato-nombre">Arroz verde</h2>
+                <p>Arroz, Mariscos, Choros frescos, Choclo cocido.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 25.50</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="costa">
+                <img src="img/costa3.webp" alt="costa" class="plato-imagen">
+                <h2 class="plato-nombre">Lomo a lo pobre</h2>
+                <p>Lomo fino, Huevo frito, Platano frito, Papas Fritas, Arroz, Tomate, Cebolla.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 33.00</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="sierra">
+                <img src="img/sierra1.webp" alt="sierra" class="plato-imagen">
+                <h2 class="plato-nombre">Pachamanca a la Olla</h2>
+                <p>Carne de Chancho, Pollo, Cordero, Papa, Camote, Choclo, Habas.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 48.90</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="sierra">
+                <img src="img/sierra2.webp" alt="sierra" class="plato-imagen">
+                <h2 class="plato-nombre">Trucha frita</h2>
+                <p>Truca frita, Arroz, Papa sancochada, Choclo cocido, Ensalada fresca.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 43.70</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="sierra">
+                <img src="img/sierra3.webp" alt="sierra" class="plato-imagen">
+                <h2 class="plato-nombre">Cuy chactado</h2>
+                <p>Cuy, Papa sancochada, Ensalada Fresca.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 25.00</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="selva">
+                <img src="img/selva1.webp" alt="selva" class="plato-imagen">
+                <h2 class="plato-nombre">Juane</h2>
+                <p>Gallina o Pollo, Huevo, Aceitunas, Arroz.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 15.60</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="selva">
+                <img src="img/selva2.webp" alt="selva" class="plato-imagen">
+                <h2 class="plato-nombre">Tacacho con cecina</h2>
+                <p>Platano, Chorizo, Chicharron.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 16.20</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="selva">
+                <img src="img/selva3.webp" alt="selva" class="plato-imagen">
+                <h2 class="plato-nombre">Patarashca</h2>
+                <p>Pescado mediano, Cebollas, Yuca o Platano asado, Ajies dulces o verdes.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 22.00</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="postre">
+                <img src="img/postres1.webp" alt="postre" class="plato-imagen">
+                <h2 class="plato-nombre">Picarones</h2>
+                <p>Zapallo, Papa amarilla, Camote, Quinua, Granos de anis.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 13.00</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="postre">
+                <img src="img/postres2.webp" alt="postre" class="plato-imagen">
+                <h2 class="plato-nombre">Arroz con leche</h2>
+                <p>Arroz, Leche condensada, Leche evaporada, Canela, Clavos de olor.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 11.50</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="postre">
+                <img src="img/postres3.webp" alt="postre" class="plato-imagen">
+                <h2 class="plato-nombre">Suspiro a la limeña</h2>
+                <p>Azucar, Leceh condensada, Leche evaporada, Huevo, Canela.</p>
+                <div class="precio plato-detalle">
+                    <p class="plato-precio">S/. 10.20</p>
+                    <button class="plato-boton compra btn-rojo2 agregarCarrito"><i
+                            class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrito-compras contenedor">
+        <h1>CARRITO</h1>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="carrito-compras-header">
+                    <h6>Producto</h6>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="carrito-compras-header">
+                    <h6 class="text-truncate">Precio</h6>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="carrito-compras-header">
+                    <h6>Cantidad</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrito-compras-items carritoComprasPlatos">
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="carrito-compras-total d-flex align-items-center">
+                    <p class="mb-0">Total</p>
+                    <p class="ml-4 mb-0 carritoComprasTotal">S/. 0.00</p>
+
+                    <button class="btn btn-rojo2 ml-auto botonComprar" type="button" data-toggle="modal"
+                        data-target="#comprarModal">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Pronto recibirá su pedido</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-rojo2" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Comida peruana para empezar el dia!!!</h2>
+            <p>Empieza tu dia degustando deliciosa comida con sabor a Perú</p>
+            <a href="#menu" class="btn btn-rojo2">Ir al menu</a>
+        </div>
+    </div>
+    <a name="contacto"></a>
+    <div class="formulario-contacto contenedor">
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-solid fa-location-dot"></i>Las Torres, Cercado de Lima 15302</p>
+            <p><i class="fas fa-solid fa-envelope"></i>RestauranteMiPeru@miperu.com.pe</p>
+            <p><i class="fas fa-solid fa-phone"></i>+51 999888777</p>
+            <div class="redes-sociales">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <form class="formulario">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" placeholder="Apellidos" id="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="text" placeholder="ejemplo@ejemplo.com" id="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Telefono</label>
+                <input type="tel" placeholder="+51 999 999 999" id="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" value="Enviar" class="btn btn-rojo2">
+            </div>
+        </form>
+    </div>
+    <div class="pie-pagina">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Las Torres, Cercado de Lima 15302</p>
+            </div>
+            <div class="info">
+                <h3>Dias Especiales</h3>
+                <p>Jueves y Sabado 7am - 11pm</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes a Domingo 7am - 11pm</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>Suscribete para recibir mas noticias</p>
+                <input type="email" placeholder="Tu correo">
+                <input type="submit" class="btn btn-rojo2" value="Suscribirse">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Desarrollado por: Diego Espinoza - Yaneli Cortez - Jeymi Goicochea</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="java/menu.js"></script>
+    <script src="java/carrito.js"></script>
+
+</body>
+
+</html>
